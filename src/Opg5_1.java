@@ -4,14 +4,13 @@ public class Opg5_1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        //Her bedes brugeren om at taste en række int
-        System.out.print("Enter a number of integers seperated by 'Enter', the input ends if the input is 0: ");
-
         int positive = 0;
         int negative = 0;
         double count = 0;
         double total = 0;
 
+        //Her bedes brugeren om at taste en række integers hvorefter de bliver læst
+        System.out.print("Enter a number of integers seperated by 'Enter', the input ends if the input is 0: ");
         int number = input.nextByte();
 
         if (number == 0){
@@ -28,7 +27,6 @@ public class Opg5_1 {
 
             number = input.nextByte();
 
-
         }
 
         double avg = total / count;
@@ -38,6 +36,5 @@ public class Opg5_1 {
                         "\nThe number of negatives is " + negative +
                         "\nThe total is total " + total +
                         "\nThe average is " + avg);
-
     }
 }
