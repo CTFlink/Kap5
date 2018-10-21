@@ -19,7 +19,7 @@ public class Opg5_34 {
             String uafgjort = "Det blev uafgjort!";
             String tabt = "Desværre du har tabt.";
 
-            while (spillerScore<2 || pcScore<2){
+            while (spillerScore-pcScore<2 && pcScore-spillerScore<2){
                 //Brugeren skal nu til at vælge Sten, Saks eller Papir.
                 //Til det bruger jeg et while loop som fortsætter indtil brugeren har indtastet en gyldig værdi f.eks. 'sten'
 
